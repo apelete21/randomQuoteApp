@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: skyblue;
+    --white: white;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#quote-box {
+    width: 40%;
+    max-width: 600px;
+    min-width: 450px;
+    background: var(--white);
+    padding: 1.5rem;
+    color: var(--primary);
+    text-align: center;
+}
+
+#text {
+    font-size: 1.2rem;
+}
+
+#text p {
+    position: relative;
+}
+
+#text p::before {
+    content: "\201C";
+    font-size: 2rem;
+}
+
+#author {
+    margin-block: 1.5rem;
+    text-transform: capitalize;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar a {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .3rem;
+    cursor: pointer;
+}
+
+#me {
+    color: var(--white);
+    font-size: .7rem;
+    font-style: italic;
+}
