@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import { useState } from "react";
 import Helmet from "react-helmet"
 import "./App.css"
 
