@@ -21,19 +21,19 @@ function App() {
     const primaryColor = `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`
 
     // Vanishing all the contents the #quote-box container
-    TL.to("#quote-box *", { opacity: 0, duration: .5 })
+    TL.to("#quote-box *", { opacity: 0, duration: .3 })
 
     // Provisoiry timeout to simulate the animations
     setTimeout(() => {
       TL2
         .to(["#quote-box *"], { opacity: 1, duration: .5 }, 1)
         .to(["#root", ".bar a"], {
-          backgroundColor: primaryColor, duration: .5
+          backgroundColor: primaryColor, duration: .3
         }, 1)
         .to("#quote-box", {
-          color: primaryColor, duration: .5
+          color: primaryColor, duration: .3
         }, -1)
-    }, 300)
+    }, 50)
   }
 
   return (
